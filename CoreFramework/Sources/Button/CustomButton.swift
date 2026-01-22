@@ -8,21 +8,21 @@
 import Foundation
 import UIKit
 
-protocol CustomButtonDelegate: AnyObject {
+public protocol CustomButtonDelegate: AnyObject {
     func buttonActions()
 }
 
 public class CustomButton: UIButton {
 
-    weak var delegate: CustomButtonDelegate?
+    public weak var delegate: CustomButtonDelegate?
     private var iconPosition: NSLayoutConstraint.Axis?
 
-    init(title: String, backgroundColor: UIColor = Colors.primaryRedBase) {
+   public init(title: String, backgroundColor: UIColor = Colors.primaryRedBase) {
         super.init(frame: .zero)
         setupButton(title: title, icon: nil, iconPosition: nil, backgroundColor: backgroundColor)
     }
 
-    init(
+   public init(
         title: String,
         icon: UIImage? = nil,
         iconPosition: NSLayoutConstraint.Axis? = nil,
@@ -62,11 +62,11 @@ public class CustomButton: UIButton {
     }
 
     private func adjustIconPosition() {
-        guard let iconPosition  = iconPosition else { return }
-        
+        guard let iconPosition = iconPosition else { return }
+
         if iconPosition == .horizontal {
             self.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
-        }else {
+        } else {
             self.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: -8, right: 0)
         }
     }
