@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   spec.name         = "CoreFramework"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "A short description of CoreFramework."
   spec.description  = <<-DESC
 			Core desenvolvido para utilizar em apps, apenas como aprendizado

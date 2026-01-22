@@ -11,16 +11,16 @@ import UIKit
 public struct Metrics {
     
     //global
-    static let huge: CGFloat = 48
-    static let high: CGFloat = 32
-    static let medium: CGFloat = 24
-    static let normal: CGFloat = 16
-    static let small: CGFloat = 12
-    static let tiny: CGFloat = 8
-    static let little: CGFloat = 4
+   public static let huge: CGFloat = 48
+   public static let high: CGFloat = 32
+   public static let medium: CGFloat = 24
+   public static let normal: CGFloat = 16
+   public static let small: CGFloat = 12
+   public static let tiny: CGFloat = 8
+   public static let little: CGFloat = 4
 
     //Home
-    static let profileBackgroundHeight: CGFloat = 200
-    static let profileImageHeight: CGFloat = 70
-    static let buttonFeedBackHeight: CGFloat = 50
+   public static let profileBackgroundHeight: CGFloat = 200
+   public static let profileImageHeight: CGFloat = 70
+   public static let buttonFeedBackHeight: CGFloat = 50
 }
